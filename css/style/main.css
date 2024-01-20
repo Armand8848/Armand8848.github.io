@@ -844,6 +844,36 @@ overflows table td {
   margin: 3px 1px 3px 1px;
   padding: 0;
 }
+.cover_banner {
+  display: block;
+  text-align: center;
+  margin: 3rem auto;
+  margin-top: 1rem;
+  padding: 10rem 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 85%;
+  box-shadow: 10000px 1px 5px 0 rgba(0,0,0,0.02), 1px 1px 15px 0 rgba(0,0,0,0.03);
+}
+.cover_banner .cover__logo {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cover_banner .cover__avatar {
+  border-radius: 10%;
+  width: 96px;
+  height: 96px;
+/* 上边 | 右边 | 下边 | 左边 */
+  margin: 0 auto -3rem auto;
+}
+.cover_banner .cover__intro {
+  color: #10bcad;
+}
+.cover_banner .cover__title {
+  color: #b5e273;
+}
 .cover {
   display: block;
   text-align: center;
