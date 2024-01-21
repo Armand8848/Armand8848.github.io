@@ -38,23 +38,24 @@
 <title>hexo cards主题添加背景图片 | Armand·Rozin</title>
 
 
-    <meta name="keywords" content="hexo, cards">
+    <meta name="keywords" content="技术, hexo, cards">
 
 
 
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="首页添加横幅图片cards主题是真简洁，但还是想整点不一样的  设置图片样式找到 主题 目录下的\source\css\style_functions\cover.styl，新建cover_banner.styl，添加下列样式代码： 文件地址：\themes\cards\source\css\style\_functions\cover_banner.styl 123456789101112131">
+    <meta name="description" content="cards主题是真简洁，但还是想整点不一样的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo cards主题添加背景图片">
 <meta property="og:url" content="https://blog.rozin.top/2024/01/21/hexoBackground/index.html">
 <meta property="og:site_name" content="Armand·Rozin">
-<meta property="og:description" content="首页添加横幅图片cards主题是真简洁，但还是想整点不一样的  设置图片样式找到 主题 目录下的\source\css\style_functions\cover.styl，新建cover_banner.styl，添加下列样式代码： 文件地址：\themes\cards\source\css\style\_functions\cover_banner.styl 123456789101112131">
+<meta property="og:description" content="cards主题是真简洁，但还是想整点不一样的">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-21T14:01:04.000Z">
-<meta property="article:modified_time" content="2024-01-21T16:35:56.403Z">
+<meta property="article:modified_time" content="2024-01-21T17:41:52.479Z">
 <meta property="article:author" content="Armand Rozin">
+<meta property="article:tag" content="技术">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="cards">
 <meta name="twitter:card" content="summary_large_image">
@@ -101,8 +102,6 @@
                 
                     <a href="/tags/" class="navbar-menu button">标签</a>
                 
-                    <a href="/categories/" class="navbar-menu button">分类</a>
-                
                     <a href="/archives/" class="navbar-menu button">归档</a>
                 
                     <a href="/links/" class="navbar-menu button">链接</a>
@@ -132,8 +131,6 @@
                     <a href="/about/" class="dropdown-menu button">关于</a>
                 
                     <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/categories/" class="dropdown-menu button">分类</a>
                 
                     <a href="/archives/" class="dropdown-menu button">归档</a>
                 
@@ -172,7 +169,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">首页添加横幅图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E6%A0%B7%E5%BC%8F"><span class="toc-text">设置图片样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9config%E6%96%87%E4%BB%B6"><span class="toc-text">修改config文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9cover%E6%96%87%E4%BB%B6"><span class="toc-text">修改cover文件</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">首页添加横幅图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E6%A0%B7%E5%BC%8F"><span class="toc-text">设置图片样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9config%E6%96%87%E4%BB%B6"><span class="toc-text">修改config文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9cover%E6%96%87%E4%BB%B6"><span class="toc-text">修改cover文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-text">参考链接</span></a></li></ol></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -182,18 +179,20 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">文章目录</div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">首页添加横幅图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E6%A0%B7%E5%BC%8F"><span class="toc-text">设置图片样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9config%E6%96%87%E4%BB%B6"><span class="toc-text">修改config文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9cover%E6%96%87%E4%BB%B6"><span class="toc-text">修改cover文件</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">首页添加横幅图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E6%A0%B7%E5%BC%8F"><span class="toc-text">设置图片样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9config%E6%96%87%E4%BB%B6"><span class="toc-text">修改config文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9cover%E6%96%87%E4%BB%B6"><span class="toc-text">修改cover文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-text">参考链接</span></a></li></ol></li></ol>
     </div>
 
 
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        <h2 id="首页添加横幅图片"><a href="#首页添加横幅图片" class="headerlink" title="首页添加横幅图片"></a><strong>首页添加横幅图片</strong></h2><p>cards主题是真简洁，但还是想整点不一样的</p>
-<hr>
+        <p>cards主题是真简洁，但还是想整点不一样的</p>
+<span id="more"></span>
+
+<h2 id="首页添加横幅图片"><a href="#首页添加横幅图片" class="headerlink" title="首页添加横幅图片"></a><strong>首页添加横幅图片</strong></h2><hr>
 <h3 id="设置图片样式"><a href="#设置图片样式" class="headerlink" title="设置图片样式"></a>设置图片样式</h3><p>找到 <em><strong>主题</strong></em> 目录下的\source\css\style_functions\cover.styl，新建cover_banner.styl，添加下列样式代码：</p>
 <p>文件地址：<code>\themes\cards\source\css\style\_functions\cover_banner.styl</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.cover</span><br><span class="line">    display: block;</span><br><span class="line">    text-align: center;</span><br><span class="line">    margin: 3rem auto;</span><br><span class="line">    margin-top: 1rem;</span><br><span class="line">    padding: 10rem 0;</span><br><span class="line">    background-size: 100% auto;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-position: 50% 50%;</span><br><span class="line">    /* background-image: /url */</span><br><span class="line">    /* 可以直接添加```background-image```属性来添加背景图片 */</span><br><span class="line">    opacity: 85%;</span><br><span class="line">    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.02), 1px 1px 15px 0 rgba(0,0,0,0.03)</span><br><span class="line"></span><br><span class="line">    .cover__logo</span><br><span class="line">        max-width $max_width_logo</span><br><span class="line">        margin-left auto</span><br><span class="line">        margin-right auto</span><br><span class="line"></span><br><span class="line">    .cover__avatar</span><br><span class="line">        border-radius 50%</span><br><span class="line">        width $avatar_width</span><br><span class="line">        height $avatar_height</span><br><span class="line">        /* 上边 | 右边 | 下边 | 左边 */</span><br><span class="line">        margin 0 auto 1rem auto</span><br><span class="line">  </span><br><span class="line">    .cover__intro</span><br><span class="line">        color: #999</span><br><span class="line"></span><br><span class="line">    .cover__title</span><br><span class="line">        color: #999</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.cover</span><br><span class="line">    display: block;</span><br><span class="line">    text-align: center;</span><br><span class="line">    margin: 3rem auto;</span><br><span class="line">    margin-top: 0rem;</span><br><span class="line">    padding: 10rem 0;</span><br><span class="line">    background-size: 100% auto;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-position: 50% 50%;</span><br><span class="line">    /* background-image: /url */</span><br><span class="line">    /* 可以直接添加```background-image```属性来添加背景图片 */</span><br><span class="line">    opacity: 85%;</span><br><span class="line">    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.02), 1px 1px 15px 0 rgba(0,0,0,0.03)</span><br><span class="line"></span><br><span class="line">    .cover__logo</span><br><span class="line">        max-width $max_width_logo</span><br><span class="line">        margin-left auto</span><br><span class="line">        margin-right auto</span><br><span class="line"></span><br><span class="line">    .cover__avatar</span><br><span class="line">        border-radius 50%</span><br><span class="line">        width $avatar_width</span><br><span class="line">        height $avatar_height</span><br><span class="line">        /* 上边 | 右边 | 下边 | 左边 */</span><br><span class="line">        margin 0 auto 1rem auto</span><br><span class="line">  </span><br><span class="line">    .cover__intro</span><br><span class="line">        color: #999</span><br><span class="line"></span><br><span class="line">    .cover__title</span><br><span class="line">        color: #999</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h3 id="修改config文件"><a href="#修改config文件" class="headerlink" title="修改config文件"></a>修改config文件</h3><p>为了修改方便，将背景图片的设置方式移到 <em><strong>主题</strong></em> 的<code>_config.yml</code>文件中，<br>在<code>_config.yml</code>文件中的<code>cover</code>项中，添加一个<code>banner</code>属性，在其中输入图片地址。</p>
@@ -206,7 +205,12 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&#x27;./header&#x27;, null, &#123;cache: false, path: path&#125;) %&gt;</span><br><span class="line">&lt;% if (page.cover !== false) &#123; %&gt;</span><br><span class="line">    &lt;% if (theme.cover.banner) &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover_banner&quot; style=&#x27;background-image:url(&quot;&lt;%= theme.cover.banner%&gt;&quot;)&#x27;&gt;</span><br><span class="line">    &lt;% &#125; else &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover&quot;&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">  </span><br><span class="line">        &lt;div class=&quot;cover__logo&quot;&gt;</span><br><span class="line">            &lt;% if (theme.cover.avatar) &#123; %&gt;</span><br><span class="line">                &lt;img no-lazy alt=&quot;author Image&quot; class=&quot;cover__avatar&quot; src=&quot;&lt;%= url_for(theme.cover.avatar) %&gt;&quot;&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">            &lt;% if (theme.cover.sitename) &#123; %&gt;</span><br><span class="line">                &lt;h1 class=&quot;cover__title&quot; &gt;&lt;%= theme.cover.sitename %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; else if (config.title) &#123; %&gt;</span><br><span class="line">                &lt;h1 class=&quot;cover__title&quot; &gt;&lt;%= config.title %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      </span><br><span class="line">        &lt;% if (theme.cover.description) &#123; %&gt;</span><br><span class="line">            &lt;div class=&quot;cover__intro&quot;&gt;</span><br><span class="line">            &lt;%- markdown(theme.cover.description) %&gt; </span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p>至此设置完成<br><code>hexo -c</code> <code>hexo -s -g</code><br>查看效果</p>
+<p>至此设置完成 命令：<br><code>hexo -c</code> <code>hexo -s -g</code><br>查看效果</p>
+<hr>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><ol>
+<li>Theme Cards 基本配置 <a target="_blank" rel="noopener" href="https://theme-cards.ichr.me/config/">https://theme-cards.ichr.me/config/</a></li>
+<li>Cards主题个性化 <a target="_blank" rel="noopener" href="https://starnight.top/2021/09/24/Cards%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87">http://starnight.top/2021/09/24/Cards主题个性化/</a></li>
+</ol>
 
     </div>
     
@@ -229,12 +233,26 @@
     </div>
  
     <div class="post-footer__meta"><p>更新于 2024-01-22</p></div> 
-    <div class="post-entry__tags"><a href="/tags/hexo/" class="post-tags__link button"># hexo</a><a href="/tags/cards/" class="post-tags__link button"># cards</a></div> 
+    <div class="post-entry__tags"><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a><a href="/tags/hexo/" class="post-tags__link button"># hexo</a><a href="/tags/cards/" class="post-tags__link button"># cards</a></div> 
 </article>
 
 
     <div class="nav">
         <div class="nav__prev">
+            
+                <a href="/2024/01/22/markdownlang/" class="nav__link">
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
+                    </div>
+                    <div>
+                        <div class="nav__label">
+                            上一篇
+                        </div>
+                        <div class="nav__title">
+                            Markdown 基础语法
+                        </div>
+                    </div>
+                </a>
             
         </div>
         <div class="nav__next">

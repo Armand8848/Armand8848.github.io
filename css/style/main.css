@@ -848,7 +848,7 @@ overflows table td {
   display: block;
   text-align: center;
   margin: 3rem auto;
-  margin-top: 1rem;
+  margin-top: 0rem;
   padding: 10rem 0;
   background-size: 100% auto;
   background-repeat: no-repeat;
