@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/images/rz.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/rz.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/rz.ico">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/rz.ico">
+    
+    
+        <link rel="mask-icon" href="/images/rz.ico">
+    
+
+
+    <!-- meta -->
+
+
+<title>hexo cards主题添加背景图片 | Armand·Rozin</title>
+
+
+    <meta name="keywords" content="hexo, cards">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="首页添加横幅图片cards主题是真简洁，但还是想整点不一样的  设置图片样式找到 主题 目录下的\source\css\style_functions\cover.styl，新建cover_banner.styl，添加下列样式代码： 文件地址：\themes\cards\source\css\style\_functions\cover_banner.styl 123456789101112131">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo cards主题添加背景图片">
+<meta property="og:url" content="https://blog.rozin.top/2024/01/21/hexoBackground/index.html">
+<meta property="og:site_name" content="Armand·Rozin">
+<meta property="og:description" content="首页添加横幅图片cards主题是真简洁，但还是想整点不一样的  设置图片样式找到 主题 目录下的\source\css\style_functions\cover.styl，新建cover_banner.styl，添加下列样式代码： 文件地址：\themes\cards\source\css\style\_functions\cover_banner.styl 123456789101112131">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-01-21T14:01:04.000Z">
+<meta property="article:modified_time" content="2024-01-21T16:35:56.403Z">
+<meta property="article:author" content="Armand Rozin">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="cards">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/style/dark.css">
+
+    
+<script src="/js/darkmode.js"></script>
+
+
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+    <body>
+        <div id="app" tabindex="-1">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">blog.rozin.top</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">主页</a>
+                
+                    <a href="/about/" class="navbar-menu button">关于</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/categories/" class="navbar-menu button">分类</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/links/" class="navbar-menu button">链接</a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+
+        
+        
+    <a href="javaScript:void(0);" id="btn-toggle-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </a>
+
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">主页</a>
+                
+                    <a href="/about/" class="dropdown-menu button">关于</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/categories/" class="dropdown-menu button">分类</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/links/" class="dropdown-menu button">链接</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+<script defer src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        hexo cards主题添加背景图片
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2024/01/" class="post-meta__date button">2024-01-21</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">首页添加横幅图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E6%A0%B7%E5%BC%8F"><span class="toc-text">设置图片样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9config%E6%96%87%E4%BB%B6"><span class="toc-text">修改config文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9cover%E6%96%87%E4%BB%B6"><span class="toc-text">修改cover文件</span></a></li></ol></li></ol>
+        </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">文章目录</div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E9%A1%B5%E6%B7%BB%E5%8A%A0%E6%A8%AA%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">首页添加横幅图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E6%A0%B7%E5%BC%8F"><span class="toc-text">设置图片样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9config%E6%96%87%E4%BB%B6"><span class="toc-text">修改config文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9cover%E6%96%87%E4%BB%B6"><span class="toc-text">修改cover文件</span></a></li></ol></li></ol>
+    </div>
+
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h2 id="首页添加横幅图片"><a href="#首页添加横幅图片" class="headerlink" title="首页添加横幅图片"></a><strong>首页添加横幅图片</strong></h2><p>cards主题是真简洁，但还是想整点不一样的</p>
+<hr>
+<h3 id="设置图片样式"><a href="#设置图片样式" class="headerlink" title="设置图片样式"></a>设置图片样式</h3><p>找到 <em><strong>主题</strong></em> 目录下的\source\css\style_functions\cover.styl，新建cover_banner.styl，添加下列样式代码：</p>
+<p>文件地址：<code>\themes\cards\source\css\style\_functions\cover_banner.styl</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.cover</span><br><span class="line">    display: block;</span><br><span class="line">    text-align: center;</span><br><span class="line">    margin: 3rem auto;</span><br><span class="line">    margin-top: 1rem;</span><br><span class="line">    padding: 10rem 0;</span><br><span class="line">    background-size: 100% auto;</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-position: 50% 50%;</span><br><span class="line">    /* background-image: /url */</span><br><span class="line">    /* 可以直接添加```background-image```属性来添加背景图片 */</span><br><span class="line">    opacity: 85%;</span><br><span class="line">    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.02), 1px 1px 15px 0 rgba(0,0,0,0.03)</span><br><span class="line"></span><br><span class="line">    .cover__logo</span><br><span class="line">        max-width $max_width_logo</span><br><span class="line">        margin-left auto</span><br><span class="line">        margin-right auto</span><br><span class="line"></span><br><span class="line">    .cover__avatar</span><br><span class="line">        border-radius 50%</span><br><span class="line">        width $avatar_width</span><br><span class="line">        height $avatar_height</span><br><span class="line">        /* 上边 | 右边 | 下边 | 左边 */</span><br><span class="line">        margin 0 auto 1rem auto</span><br><span class="line">  </span><br><span class="line">    .cover__intro</span><br><span class="line">        color: #999</span><br><span class="line"></span><br><span class="line">    .cover__title</span><br><span class="line">        color: #999</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="修改config文件"><a href="#修改config文件" class="headerlink" title="修改config文件"></a>修改config文件</h3><p>为了修改方便，将背景图片的设置方式移到 <em><strong>主题</strong></em> 的<code>_config.yml</code>文件中，<br>在<code>_config.yml</code>文件中的<code>cover</code>项中，添加一个<code>banner</code>属性，在其中输入图片地址。</p>
+<p>文件地址：<code>\themes\cards\_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 封面 cover 设置</span><br><span class="line">cover: </span><br><span class="line">  # 首页的横幅图片，输入图片地址</span><br><span class="line">  banner: /url/banner.jpg  /* 图片存放地址 */</span><br><span class="line"></span><br><span class="line">  # 显示在最上方 cover 处的站点名称</span><br><span class="line">  sitename: Armand Rozin </span><br><span class="line"></span><br><span class="line">  # 若 avatar 配置不为空，则优先使用 avatar 覆盖 sitename</span><br><span class="line">  avatar: /url/avatar.png</span><br><span class="line">  </span><br><span class="line">  # sitename/avatar 下方的一句话介绍</span><br><span class="line">  description: Hi, nice to meet you!</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="修改cover文件"><a href="#修改cover文件" class="headerlink" title="修改cover文件"></a>修改cover文件</h3><p>将cover.ejs文件中将代码添加 if 判断语句，如果配置文件添加了背景图片，则使用cover_banner进行渲染，否则就按照cover渲染</p>
+<p>文件地址：<code>\themes\cards\layout\_partial\source\cover.ejs</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&#x27;./header&#x27;, null, &#123;cache: false, path: path&#125;) %&gt;</span><br><span class="line">&lt;% if (page.cover !== false) &#123; %&gt;</span><br><span class="line">    &lt;% if (theme.cover.banner) &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover_banner&quot; style=&#x27;background-image:url(&quot;&lt;%= theme.cover.banner%&gt;&quot;)&#x27;&gt;</span><br><span class="line">    &lt;% &#125; else &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover&quot;&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">  </span><br><span class="line">        &lt;div class=&quot;cover__logo&quot;&gt;</span><br><span class="line">            &lt;% if (theme.cover.avatar) &#123; %&gt;</span><br><span class="line">                &lt;img no-lazy alt=&quot;author Image&quot; class=&quot;cover__avatar&quot; src=&quot;&lt;%= url_for(theme.cover.avatar) %&gt;&quot;&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">            &lt;% if (theme.cover.sitename) &#123; %&gt;</span><br><span class="line">                &lt;h1 class=&quot;cover__title&quot; &gt;&lt;%= theme.cover.sitename %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; else if (config.title) &#123; %&gt;</span><br><span class="line">                &lt;h1 class=&quot;cover__title&quot; &gt;&lt;%= config.title %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      </span><br><span class="line">        &lt;% if (theme.cover.description) &#123; %&gt;</span><br><span class="line">            &lt;div class=&quot;cover__intro&quot;&gt;</span><br><span class="line">            &lt;%- markdown(theme.cover.description) %&gt; </span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>至此设置完成<br><code>hexo -c</code> <code>hexo -s -g</code><br>查看效果</p>
+
+    </div>
+    
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>Armand Rozin
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://blog.rozin.top/2024/01/21/hexoBackground/">https://blog.rozin.top/2024/01/21/hexoBackground/</a>
+        </p>
+        
+            <strong>
+                <p>文章默认使用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 DEED</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
+        
+    </div>
+ 
+    <div class="post-footer__meta"><p>更新于 2024-01-22</p></div> 
+    <div class="post-entry__tags"><a href="/tags/hexo/" class="post-tags__link button"># hexo</a><a href="/tags/cards/" class="post-tags__link button"># cards</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
+            
+        </div>
+        <div class="nav__next">
+            
+                <a href="/2024/01/21/copyright/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            下一篇
+                        </div>
+                        <div class="nav__title">
+                            CC BY-NC-SA 4.0 DEED 知识共享许可协议
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+     
+    <a href="#" class="button" id="b2t" aria-label="回到顶部" title="回到顶部">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+            <path d="M233.376 722.752L278.624 768 512 534.624 745.376 768l45.248-45.248L512 444.128zM192 352h640V288H192z" fill="currentColor"></path>
+        </svg>
+    </a>
+
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2024 <a href="/">Armand·Rozin</a>
+        </p>
+    
+    
+        
+            <p><a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">CC BY-NC-SA 4.0 DEED</a></p>
+
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.css">
+
+    
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.4.1/dist/jquery.fancybox.min.js"></script>
+
+    <script>
+        let lazyloadT = Boolean('false'),
+            auto_fancybox = Boolean('false')
+        if (auto_fancybox) {
+            $(".post__content").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        } else {
+            $(".post__content").find("fancybox").find('img').each(function () {
+                var element = document.createElement("a");
+                $(element).attr("data-fancybox", "gallery");
+                $(element).attr("href", $(this).attr("src"));
+                if (lazyloadT) {
+                    $(element).attr("href", $(this).attr("data-srcset"));
+                }
+                $(this).wrap(element);
+            });
+        }
+    </script>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
