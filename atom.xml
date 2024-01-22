@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Armand·Rozin</title>
+  
+  
+  <link href="https://blog.rozin.top/atom.xml" rel="self"/>
+  
+  <link href="https://blog.rozin.top/"/>
+  <updated>2024-01-22T04:39:29.495Z</updated>
+  <id>https://blog.rozin.top/</id>
+  
+  <author>
+    <name>Armand Rozin</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo cards主题一些折腾</title>
+    <link href="https://blog.rozin.top/2024/01/22/hexocardssoso/"/>
+    <id>https://blog.rozin.top/2024/01/22/hexocardssoso/</id>
+    <published>2024-01-22T02:59:07.000Z</published>
+    <updated>2024-01-22T04:39:29.495Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;头像昵称同时显示 | 名称下今日诗词 | 添加代码块复制功能&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://blog.rozin.top/tags/hexo/"/>
+    
+    <category term="cards" scheme="https://blog.rozin.top/tags/cards/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 基础语法</title>
+    <link href="https://blog.rozin.top/2024/01/22/markdownlang/"/>
+    <id>https://blog.rozin.top/2024/01/22/markdownlang/</id>
+    <published>2024-01-21T17:24:21.000Z</published>
+    <updated>2024-01-21T17:44:31.882Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt; Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。文档后缀为.md。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="markdown" scheme="https://blog.rozin.top/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo cards主题添加背景图片</title>
+    <link href="https://blog.rozin.top/2024/01/21/hexoBackground/"/>
+    <id>https://blog.rozin.top/2024/01/21/hexoBackground/</id>
+    <published>2024-01-21T14:01:04.000Z</published>
+    <updated>2024-01-22T03:21:07.906Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;cards主题是真简洁，但还是想整点不一样的&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo" scheme="https://blog.rozin.top/tags/hexo/"/>
+    
+    <category term="cards" scheme="https://blog.rozin.top/tags/cards/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CC BY-NC-SA 4.0 DEED 知识共享许可协议</title>
+    <link href="https://blog.rozin.top/2024/01/21/copyright/"/>
+    <id>https://blog.rozin.top/2024/01/21/copyright/</id>
+    <published>2024-01-21T10:51:25.000Z</published>
+    <updated>2024-01-21T17:26:58.034Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+    <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="协议" scheme="https://blog.rozin.top/tags/%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://blog.rozin.top/2024/01/19/hello-world/"/>
+    <id>https://blog.rozin.top/2024/01/19/hello-world/</id>
+    <published>2024-01-19T13:01:48.328Z</published>
+    <updated>2024-01-21T10:36:25.699Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
