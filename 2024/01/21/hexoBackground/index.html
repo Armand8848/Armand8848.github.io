@@ -38,7 +38,7 @@
 <title>hexo cards主题添加背景图片 | Armand·Rozin</title>
 
 
-    <meta name="keywords" content="技术, hexo, cards">
+    <meta name="keywords" content="hexo, cards, 技术">
 
 
 
@@ -53,11 +53,11 @@
 <meta property="og:description" content="cards主题是真简洁，但还是想整点不一样的">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-21T14:01:04.000Z">
-<meta property="article:modified_time" content="2024-01-21T17:41:52.479Z">
+<meta property="article:modified_time" content="2024-01-22T03:21:07.906Z">
 <meta property="article:author" content="Armand Rozin">
-<meta property="article:tag" content="技术">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="cards">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary_large_image">
 
 
@@ -82,6 +82,8 @@
 
     <!-- custom head -->
 
+
+    <link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
 <meta name="generator" content="Hexo 7.0.0"></head>
 
     <body>
@@ -202,7 +204,7 @@
 <hr>
 <h3 id="修改cover文件"><a href="#修改cover文件" class="headerlink" title="修改cover文件"></a>修改cover文件</h3><p>将cover.ejs文件中将代码添加 if 判断语句，如果配置文件添加了背景图片，则使用cover_banner进行渲染，否则就按照cover渲染</p>
 <p>文件地址：<code>\themes\cards\layout\_partial\source\cover.ejs</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&#x27;./header&#x27;, null, &#123;cache: false, path: path&#125;) %&gt;</span><br><span class="line">&lt;% if (page.cover !== false) &#123; %&gt;</span><br><span class="line">    &lt;% if (theme.cover.banner) &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover_banner&quot; style=&#x27;background-image:url(&quot;&lt;%= theme.cover.banner%&gt;&quot;)&#x27;&gt;</span><br><span class="line">    &lt;% &#125; else &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover&quot;&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">  </span><br><span class="line">        &lt;div class=&quot;cover__logo&quot;&gt;</span><br><span class="line">            &lt;% if (theme.cover.avatar) &#123; %&gt;</span><br><span class="line">                &lt;img no-lazy alt=&quot;author Image&quot; class=&quot;cover__avatar&quot; src=&quot;&lt;%= url_for(theme.cover.avatar) %&gt;&quot;&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">            &lt;% if (theme.cover.sitename) &#123; %&gt;</span><br><span class="line">                &lt;h1 class=&quot;cover__title&quot; &gt;&lt;%= theme.cover.sitename %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; else if (config.title) &#123; %&gt;</span><br><span class="line">                &lt;h1 class=&quot;cover__title&quot; &gt;&lt;%= config.title %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      </span><br><span class="line">        &lt;% if (theme.cover.description) &#123; %&gt;</span><br><span class="line">            &lt;div class=&quot;cover__intro&quot;&gt;</span><br><span class="line">            &lt;%- markdown(theme.cover.description) %&gt; </span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&#x27;./header&#x27;, null, &#123;cache: false, path: path&#125;) %&gt;</span><br><span class="line">&lt;% if (page.cover !== false) &#123; %&gt;</span><br><span class="line">    &lt;% if (theme.cover.banner) &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover_banner&quot; style=&#x27;background-image:url(&quot;&lt;%= theme.cover.banner%&gt;&quot;)&#x27;&gt;</span><br><span class="line">    &lt;% &#125; else &#123; %&gt;</span><br><span class="line">        &lt;div class=&quot;cover&quot;&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">  </span><br><span class="line">        &lt;div class=&quot;cover__logo&quot;&gt;</span><br><span class="line">            &lt;% if (theme.cover.avatar) &#123; %&gt;</span><br><span class="line">                &lt;img no-lazy alt=&quot;author Image&quot; class=&quot;cover__avatar&quot; src=&quot;&lt;%= url_for(theme.cover.avatar) %&gt;&quot;&gt;</span><br><span class="line">            &lt;% &#125; else if (theme.cover.sitename) &#123; %&gt;</span><br><span class="line">                &lt;h1&gt;&lt;%= theme.cover.sitename %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; else if (config.title) &#123; %&gt;</span><br><span class="line">                &lt;h1&gt;&lt;%= config.title %&gt;&lt;/h1&gt;</span><br><span class="line">            &lt;% &#125; %&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      </span><br><span class="line">        &lt;% if (theme.cover.description) &#123; %&gt;</span><br><span class="line">            &lt;div class=&quot;cover__intro&quot;&gt;</span><br><span class="line">            &lt;%- markdown(theme.cover.description) %&gt; </span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <p>至此设置完成 命令：<br><code>hexo -c</code> <code>hexo -s -g</code><br>查看效果</p>
@@ -233,7 +235,7 @@
     </div>
  
     <div class="post-footer__meta"><p>更新于 2024-01-22</p></div> 
-    <div class="post-entry__tags"><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a><a href="/tags/hexo/" class="post-tags__link button"># hexo</a><a href="/tags/cards/" class="post-tags__link button"># cards</a></div> 
+    <div class="post-entry__tags"><a href="/tags/hexo/" class="post-tags__link button"># hexo</a><a href="/tags/cards/" class="post-tags__link button"># cards</a><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a></div> 
 </article>
 
 
@@ -382,5 +384,9 @@
 
 
 
+        <!-- 代码块复制功能 -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+        <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/clipboard_use.js"></script>
     </body>
 </html>
