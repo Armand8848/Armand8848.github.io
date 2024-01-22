@@ -1,39 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Armand·Rozin</title>
+  <title>Rozin</title>
   
   
   <link href="https://blog.rozin.top/atom.xml" rel="self"/>
   
   <link href="https://blog.rozin.top/"/>
-  <updated>2024-01-22T07:17:10.253Z</updated>
+  <updated>2024-01-22T11:42:21.216Z</updated>
   <id>https://blog.rozin.top/</id>
   
   <author>
-    <name>Armand Rozin</name>
+    <name>Rozin</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Rozin 目前在用的翻墙方法</title>
+    <link href="https://blog.rozin.top/2024/01/22/fqjichu/"/>
+    <id>https://blog.rozin.top/2024/01/22/fqjichu/</id>
+    <published>2024-01-22T07:54:15.000Z</published>
+    <updated>2024-01-22T11:42:21.216Z</updated>
+    
+    
+    <summary type="html">有东西被加密了, 请输入密码查看.</summary>
+    
+    
+    
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="翻墙" scheme="https://blog.rozin.top/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anaconda基础指令</title>
+    <link href="https://blog.rozin.top/2024/01/22/condacmd/"/>
+    <id>https://blog.rozin.top/2024/01/22/condacmd/</id>
+    <published>2024-01-22T07:28:58.000Z</published>
+    <updated>2024-01-22T07:47:15.554Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;anaconda基础指令&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="备忘录" scheme="https://blog.rozin.top/tags/%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    
+    <category term="指令" scheme="https://blog.rozin.top/tags/%E6%8C%87%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo cards主题一些折腾</title>
     <link href="https://blog.rozin.top/2024/01/22/hexocardssoso/"/>
     <id>https://blog.rozin.top/2024/01/22/hexocardssoso/</id>
     <published>2024-01-22T02:59:07.000Z</published>
-    <updated>2024-01-22T07:17:10.253Z</updated>
+    <updated>2024-01-22T07:26:40.848Z</updated>
     
     
-    <summary type="html">&lt;p&gt;头像昵称同时显示 | 名称下今日诗词 | 添加代码块复制功能 | 添加 RSS 订阅功能&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;头像昵称同时显示 | 名称下今日诗词 | 添加代码块复制功能 | 添加 RSS 订阅功能 | 添加文章加密功能  &lt;/p&gt;</summary>
     
     
     
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="hexo" scheme="https://blog.rozin.top/tags/hexo/"/>
     
     <category term="cards" scheme="https://blog.rozin.top/tags/cards/"/>
-    
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -50,9 +90,9 @@
     
     
     
-    <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
-    
     <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+    <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
     
     <category term="markdown" scheme="https://blog.rozin.top/tags/markdown/"/>
     
@@ -71,11 +111,11 @@
     
     
     
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
     <category term="hexo" scheme="https://blog.rozin.top/tags/hexo/"/>
     
     <category term="cards" scheme="https://blog.rozin.top/tags/cards/"/>
-    
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
