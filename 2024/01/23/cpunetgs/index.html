@@ -38,7 +38,7 @@
 <title>计算机网络 --- 概述 | Rozin</title>
 
 
-    <meta name="keywords" content="技术, 计算机网络, 知识">
+    <meta name="keywords" content="技术, 知识, 计算机网络">
 
 
 
@@ -53,12 +53,13 @@
 <meta property="og:description" content="计算机网络是计算机技术与通信技术相互结合的产物。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.rozin.top/postimgs/cngsOSITCP.jpg">
+<meta property="og:image" content="https://blog.rozin.top/postimgs/cngsCSGC.jpg">
 <meta property="article:published_time" content="2024-01-23T05:17:23.000Z">
-<meta property="article:modified_time" content="2024-01-23T06:30:49.900Z">
+<meta property="article:modified_time" content="2024-01-23T09:31:00.808Z">
 <meta property="article:author" content="Rozin">
 <meta property="article:tag" content="技术">
-<meta property="article:tag" content="计算机网络">
 <meta property="article:tag" content="知识">
+<meta property="article:tag" content="计算机网络">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://blog.rozin.top/postimgs/cngsOSITCP.jpg">
 
@@ -178,7 +179,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI-RM-%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI&#x2F;RM 参考模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP-%E6%A8%A1%E5%9E%8B"><span class="toc-text">TCP&#x2F;IP 模型</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">计算机网络的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-text">计算机网络的功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-text">计算机网络的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%A6%E5%AE%BD"><span class="toc-text">带宽</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%9E%E5%90%90%E9%87%8F"><span class="toc-text">吞吐量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6-%E2%AD%90"><span class="toc-text">时延 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6%E5%B8%A6%E5%AE%BD%E7%A7%AF"><span class="toc-text">时延带宽积</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%80%E8%BF%94%E6%97%B6%E5%BB%B6-RTT-Round-Trip-Time-%E2%AD%90"><span class="toc-text">往返时延 RTT(Round-Trip Time) ⭐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-text">网络协议三要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI-RM-%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI&#x2F;RM 参考模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP-%E6%A8%A1%E5%9E%8B-%E2%AD%90"><span class="toc-text">TCP&#x2F;IP 模型 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E7%BD%91%E7%BB%9C%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BC%A0%E8%BE%93%E8%BF%87%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE%E5%A6%82%E4%B8%8B-%E2%AD%90"><span class="toc-text">在网络中数据的传输过程示意图如下 ⭐</span></a></li></ol></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -188,7 +189,7 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">文章目录</div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI-RM-%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI&#x2F;RM 参考模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP-%E6%A8%A1%E5%9E%8B"><span class="toc-text">TCP&#x2F;IP 模型</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E7%BB%84%E6%88%90"><span class="toc-text">计算机网络的组成</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E5%8A%9F%E8%83%BD"><span class="toc-text">计算机网络的功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87"><span class="toc-text">计算机网络的性能指标</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%A6%E5%AE%BD"><span class="toc-text">带宽</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%9E%E5%90%90%E9%87%8F"><span class="toc-text">吞吐量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6-%E2%AD%90"><span class="toc-text">时延 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6%E5%B8%A6%E5%AE%BD%E7%A7%AF"><span class="toc-text">时延带宽积</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%80%E8%BF%94%E6%97%B6%E5%BB%B6-RTT-Round-Trip-Time-%E2%AD%90"><span class="toc-text">往返时延 RTT(Round-Trip Time) ⭐</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-text">网络协议三要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OSI-RM-%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI&#x2F;RM 参考模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-IP-%E6%A8%A1%E5%9E%8B-%E2%AD%90"><span class="toc-text">TCP&#x2F;IP 模型 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E7%BD%91%E7%BB%9C%E4%B8%AD%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BC%A0%E8%BE%93%E8%BF%87%E7%A8%8B%E7%A4%BA%E6%84%8F%E5%9B%BE%E5%A6%82%E4%B8%8B-%E2%AD%90"><span class="toc-text">在网络中数据的传输过程示意图如下 ⭐</span></a></li></ol></li></ol>
     </div>
 
 
@@ -198,13 +199,97 @@
         <p>计算机网络是计算机技术与通信技术相互结合的产物。</p>
 <span id="more"></span>
 
+<hr>
+<h3 id="计算机网络的组成"><a href="#计算机网络的组成" class="headerlink" title="计算机网络的组成"></a>计算机网络的组成</h3><p>一般而论，计算机网络有三个主要组成部分：<code>若干个主机</code>，它们为各用户提供服务；<code>一个通信子网</code>，它主要由节点交换机和连接这些节点的通信链路组成；<code>一系列协议</code>，这些协议是为在主机与主机之间、主机与子网之间、子网中各节点之间的通信而用的，是通信双方事先约定好的、必须遵守的规则。</p>
+<h3 id="计算机网络的功能"><a href="#计算机网络的功能" class="headerlink" title="计算机网络的功能"></a>计算机网络的功能</h3><p><code>数据通信</code> <code>链接的建立和拆除</code> <code>数据传输控制</code> <code>差错检测</code> <code>流量控制</code> <code>路由选择</code> <code>多路复用</code></p>
+<h3 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h3><h4 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h4><p>带宽（bandwidth）本来是指模拟信道中信号具有的频带宽度，单位是Hz（或 KHz、MHz、GHz 等）。<br>计算机网络中的带宽是指数字信道可通过最高数据率，即每秒比特（bit）数，单位是比特每秒（b&#x2F;s 或 bit&#x2F;s）。</p>
+<blockquote>
+<p>Mbps、Mb&#x2F;s、MB&#x2F;s傻傻分不清？<br>8Mbps&#x3D;8Mb&#x2F;s&#x3D;1MB&#x2F;s<br>推荐参考文章：<a target="_blank" rel="noopener" href="https://www.ithome.com/0/437/491.htm">一文看懂Mbps、Mb&#x2F;s、MB&#x2F;s 有什么区别</a></p>
+</blockquote>
+<h4 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h4><p>单位时间内通过某个网络（或信道、接口）的数据量，用于对现实世界中网络的测量，以便知道实际上到底有多少数据量能够通过网络。显然吞吐量受网络的带宽或网络额定速率的限制。</p>
+<blockquote>
+<p>可理解为网络的实际带宽</p>
+</blockquote>
+<h4 id="时延-⭐"><a href="#时延-⭐" class="headerlink" title="时延 ⭐"></a>时延 ⭐</h4><ul>
+<li><em>发送时延</em>，又称传输时延：<em><strong>（带宽越宽 时延越短）</strong></em><br>发送时延 &#x3D; 数据块长度（bit）&#x2F;信道宽度（bit&#x2F;s）<blockquote>
+<p>即 发送的数据 发送完毕需要的时间</p>
+</blockquote>
+</li>
+<li><em>传播时延</em>：<em><strong>（距离越近 时延越短）</strong></em><br>传播时延 &#x3D; 信道长度（m）&#x2F;信号在信道上传播的速率（m&#x2F;s）<blockquote>
+<p>即 电磁波传播一定距离花费的时间</p>
+</blockquote>
+</li>
+<li>处理时延：换节点为存储转发而进行必要的处理所花费的时间。</li>
+<li>排队时延：节点缓存队列中分组排队所经历的时延。排队时延的长短往往取决于网络当中当时的通信量。</li>
+</ul>
+<p><code>总时延</code> &#x3D; <code>发送时延</code> + <code>传播时延</code> + <code>处理时延</code> + <code>排队时延</code></p>
+<h4 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h4><p>时延带宽积 &#x3D; 传播时延 × 带宽</p>
+<blockquote>
+<p>用于表示 通信链路上已经传输但尚未收到的比特数</p>
+</blockquote>
+<h4 id="往返时延-RTT-Round-Trip-Time-⭐"><a href="#往返时延-RTT-Round-Trip-Time-⭐" class="headerlink" title="往返时延 RTT(Round-Trip Time) ⭐"></a>往返时延 <em>RTT(Round-Trip Time)</em> ⭐</h4><p>数据在链路上从发送端到接收端，再从接收端返回发送端的时间总和。<br>在互联网中，往返时延还包括中间节点的处理时延、排队时延以及转发数据时的发送时延。</p>
+<p>RRT &#x3D; 传播时延 + 各中间结点的处理时延、排队时延以及转发数据时的发送时延</p>
+<blockquote>
+<p>有些资料书对RRT的定义是：<del>从发送方发送数据开始，</del> 到发送方收到来自接收方的确认消息（接收方收到数据后便立即发送确认），总共经历的时间。<br>上方定义是说从发送方发送数据开始，也就是包括发送时延，但是通过做大量题目之后，就会发现往返时间不包括发送时延。</p>
+</blockquote>
+<hr>
+<h3 id="网络协议三要素"><a href="#网络协议三要素" class="headerlink" title="网络协议三要素"></a>网络协议三要素</h3><ol>
+<li>语法：数据与控制信息的结构或格式</li>
+<li>语义：何种控制信息、何种动作、何总响应</li>
+<li>同步：事件实现顺序的详细说明</li>
+</ol>
+<blockquote>
+<p>分层是对复杂系统进行分解的方法之一<br>各层相互独立 各层都可采用最适合的技术实现<br>不同层间协议的集合称为 协议栈</p>
+</blockquote>
 <h3 id="OSI-RM-参考模型"><a href="#OSI-RM-参考模型" class="headerlink" title="OSI&#x2F;RM 参考模型"></a>OSI&#x2F;RM 参考模型</h3><p>物理层、数据链路层、网络层、传输层、会话层、表示层、应用层</p>
 <blockquote>
 <p>由ISO（国际标准化组织）统一规定的互联网参考模型Open Standard Interconnection &#x2F;Reference Model（开放系统互连参考模型）</p>
 </blockquote>
-<h3 id="TCP-IP-模型"><a href="#TCP-IP-模型" class="headerlink" title="TCP&#x2F;IP 模型"></a>TCP&#x2F;IP 模型</h3><p>网络接口层（物理层、数据链路层）、网络层（IP层）、传输层、应用层（会话层、表示层、应用层）</p>
+<h3 id="TCP-IP-模型-⭐"><a href="#TCP-IP-模型-⭐" class="headerlink" title="TCP&#x2F;IP 模型 ⭐"></a>TCP&#x2F;IP 模型 ⭐</h3><p>物理层、数据链路层、网络层（IP层）、传输层、应用层</p>
+<blockquote>
+<p>TCP&#x2F;IP 模型是由 OSI 模型演化而来，TCP&#x2F;IP 模型将 OSI 模型由七层简化为五层（一开始为四层），应用层、表示层、会话层统一为应用层。</p>
+</blockquote>
+<table>
+<tr>
+<th>层级</th> <th>OSI七层模型</th> <th>TCP/IP模型-五层</th> <th>TCP/IP模型-四层</th> <th>常用协议</th>
+</tr>
+<tr>
+<th>7</th> <th>应用层</th> <th rowspan=3>应用层</th> <th rowspan=3>应用层</th> <th rowspan=3>HTTPS、HTTP、Telnet、FTP、TFTP、DNS、SMTP</th>
+</tr>
+<tr>
+<th>6</th> <th>表示层</th>
+</tr>
+<tr>
+<th>5</th> <th>会话层</th>
+</tr>
+<tr>
+<th>4</th> <th>传输层</th> <th>传输层</th> <th>传输层</th> <th>TCP、UDP</th>
+</tr>
+<tr>
+<th>3</th> <th>网络层</th> <th>网络层</th> <th>网络层</th> <th>IP、ARP、RARP、ICMP、IGMP、OSPF</th>
+</tr>
+<tr>
+<th>2</th> <th>数据链路层</th> <th>数据链路层</th> <th rowspan=2>网络接口层</th> <th>以太网、令牌环、PPP、PPTP、L2TP、ARP、ATMP</th>
+</tr>
+<tr>
+<th>1</th> <th>物理层</th> <th>物理层</th> <th>物理线路、光纤、无线电</th>
+</tr>
+</table>
+
+<blockquote>
+<p><em><strong>ARP 到底属于哪一层</strong></em><br>ARP 属于网络层，原因是 ARP 属于 TCP&#x2F;IP 协议簇。在 TCP&#x2F;IP 模型中，未定义 OSI 参考模型的物理层和数据链路层这两层的功能，它定义的都是在网络层及以上的协议。<br>ARP 属于数据链路层，理由按照 OSI 参考模型，数据链路层封装 IP 报文时，需要通过 ARP 获取链路层目的地址，添加到报文头部，这就不属于网络层的功能了。<br>结论：在 TCP&#x2F;IP 模式中 ARP 协议属于网络层，在 OSI 参考模型中 ARP 协议属于数据链路层。</p>
+</blockquote>
 <p>OSI的七层协议体系结构的概念清楚，理论也比较完整，但其既复杂又不实用。TCP&#x2F;IP体系结构则不同，现在已经得到了非常广泛的应用。</p>
-<img src="/postimgs/cngsOSITCP.jpg" style="zoom:100%" />
+<img src="/postimgs/cngsOSITCP.jpg" style="zoom:100%" alt="OSI/RM 参考模型 & TCP/IP 模型 分析图" />
+
+<h4 id="在网络中数据的传输过程示意图如下-⭐"><a href="#在网络中数据的传输过程示意图如下-⭐" class="headerlink" title="在网络中数据的传输过程示意图如下 ⭐"></a>在网络中数据的传输过程示意图如下 ⭐</h4><p>(1) 应用层：规定应用进程在通信时所遵循的协议，其 PDU 为报文（message）。<br>(1) 传输层：负责网络上进程间的通信，其 PDU 为报文段（segment）或用户数据报（user datagram）。<br>(1) 网络层：实现分组交换网上不同主机间的通信，其 PDU 为 IP数据报。<br>(1) 链路层：实现网络上两个相邻节点间的通信，其 PDU 为帧（frame）。<br>(1) 物理层：透明地传输比特流，其 PDU 为 bit 。</p>
+<blockquote>
+<p><em><strong>PDU：</strong></em> 协议数据单元(Protocol Data Unit )，指对等层次之间传递的数据单位。</p>
+</blockquote>
+<img src="/postimgs/cngsCSGC.jpg" style="zoom:100%" alt="网络中数据的传输过程示意图" />
+
+<hr>
+
     </div>
     
     <div class="post__license">
@@ -226,7 +311,7 @@
     </div>
  
     <div class="post-footer__meta"><p>更新于 2024-01-23</p></div> 
-    <div class="post-entry__tags"><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-tags__link button"># 计算机网络</a><a href="/tags/%E7%9F%A5%E8%AF%86/" class="post-tags__link button"># 知识</a></div> 
+    <div class="post-entry__tags"><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a><a href="/tags/%E7%9F%A5%E8%AF%86/" class="post-tags__link button"># 知识</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-tags__link button"># 计算机网络</a></div> 
 </article>
 
 
