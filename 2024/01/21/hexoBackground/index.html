@@ -420,7 +420,7 @@
             (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
             document.body.appendChild(e);
             e.onload = () => {
-                var valineConfig = {"appId":"3S2MXsJ3ny7DlGnoV9047m2t-MdYXbMMI","appKey":"0LzNUXp2TYENbM0TEHa5B5DZ","placeholder":null,"path":null,"avatar":"hide","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","visitor":null,"highlight":null,"avatarForce":null,"recordIP":true,"serverURLs":null,"enableQQ":"ture","requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                var valineConfig = {"appId":"3S2MXsJ3ny7DlGnoV9047m2t-MdYXbMMI","appKey":"0LzNUXp2TYENbM0TEHa5B5DZ","placeholder":null,"path":null,"avatar":null,"meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","visitor":null,"highlight":null,"avatarForce":null,"recordIP":true,"serverURLs":"https://leancloud.rozin.top","enableQQ":"ture","requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
                 valineConfig.el = '#valine_container';
                 for (var i in valineConfig) {
                     if (valineConfig[i] === null) delete valineConfig[i];
