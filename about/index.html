@@ -224,7 +224,7 @@
 </ul>
 <hr>
 <h3 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h3><blockquote>
-<p><strong>Email:</strong> <a href="mailto:&#x62;&#108;&#x6f;&#103;&#46;&#x72;&#x6f;&#122;&#x69;&#110;&#x2e;&#116;&#x6f;&#x70;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;">&#x62;&#108;&#x6f;&#103;&#46;&#x72;&#x6f;&#122;&#x69;&#110;&#x2e;&#116;&#x6f;&#x70;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#x2e;&#99;&#111;&#109;</a></p>
+<p><strong>Email:</strong> <a href="mailto:&#x62;&#108;&#111;&#103;&#46;&#114;&#111;&#x7a;&#105;&#x6e;&#x2e;&#x74;&#111;&#x70;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x62;&#108;&#111;&#103;&#46;&#114;&#111;&#x7a;&#105;&#x6e;&#x2e;&#x74;&#111;&#x70;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <blockquote>
 <p><strong>GitHub:</strong> <a target="_blank" rel="noopener" href="https://github.com/Armand8848">Rozin·Armand8848</a></p>
@@ -259,6 +259,8 @@ Proletarians of all countries, unite!</br>
     
     
     
+    <div id="valine_container" class="valine_thread"></div>
+
     
     
     
@@ -382,6 +384,40 @@ Proletarians of all countries, unite!</br>
 
     
     
+    <script>
+        function loadComment() {
+            let e;
+            (e = document.createElement("script")).src = 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
+            document.body.appendChild(e);
+            e.onload = () => {
+                var valineConfig = {"appId":"3S2MXsJ3ny7DlGnoV9047m2t-MdYXbMMI","appKey":"0LzNUXp2TYENbM0TEHa5B5DZ","placeholder":null,"path":null,"avatar":"hide","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","visitor":null,"highlight":null,"avatarForce":null,"recordIP":true,"serverURLs":null,"enableQQ":"ture","requiredFields":["nick","mail"],"emojiCDN":null,"emojiMaps":null};
+                valineConfig.el = '#valine_container';
+                for (var i in valineConfig) {
+                    if (valineConfig[i] === null) delete valineConfig[i];
+                }
+                new Valine(valineConfig);
+            };
+        }
+    
+        var runningOnBrowser = typeof window !== "undefined";
+        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    
+        setTimeout(function () {
+            if (!isBot && supportsIntersectionObserver) {
+                var comment_observer = new IntersectionObserver(function(entries) {
+                    if (entries[0].isIntersecting) {
+                        loadComment();
+                        comment_observer.disconnect();
+                    }
+                }, { threshold: [0] });
+                comment_observer.observe(document.getElementById('comment'));
+            } else {
+                loadComment();
+            }
+        }, 1);
+    </script>
+
 
     
     
