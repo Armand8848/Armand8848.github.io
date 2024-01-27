@@ -6,7 +6,7 @@
   <link href="https://blog.rozin.top/atom.xml" rel="self"/>
   
   <link href="https://blog.rozin.top/"/>
-  <updated>2024-01-24T09:09:38.828Z</updated>
+  <updated>2024-01-27T14:01:10.282Z</updated>
   <id>https://blog.rozin.top/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows本地端口占用问题</title>
+    <link href="https://blog.rozin.top/2024/01/27/winisuDKZY/"/>
+    <id>https://blog.rozin.top/2024/01/27/winisuDKZY/</id>
+    <published>2024-01-27T12:29:40.000Z</published>
+    <updated>2024-01-27T14:01:10.282Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;重启大法好&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>计算机网络 --- [01] 物理层</title>
@@ -29,9 +44,9 @@
     
     
     
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机网络" scheme="https://blog.rozin.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
@@ -50,9 +65,9 @@
     
     
     
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机网络" scheme="https://blog.rozin.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
@@ -132,9 +147,9 @@
     
     
     
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="markdown" scheme="https://blog.rozin.top/tags/markdown/"/>
     
