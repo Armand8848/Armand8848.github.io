@@ -6,7 +6,7 @@
   <link href="https://blog.rozin.top/atom.xml" rel="self"/>
   
   <link href="https://blog.rozin.top/"/>
-  <updated>2024-01-28T08:47:07.111Z</updated>
+  <updated>2024-01-28T09:07:14.325Z</updated>
   <id>https://blog.rozin.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>德州扑克 --- [02] 翻牌后，转牌、河牌中牌概率</title>
+    <link href="https://blog.rozin.top/2024/01/28/texas02zphpgl/"/>
+    <id>https://blog.rozin.top/2024/01/28/texas02zphpgl/</id>
+    <published>2024-01-28T09:03:22.000Z</published>
+    <updated>2024-01-28T09:07:14.325Z</updated>
+    
+    
+    <summary type="html">&lt;p style=&quot;color:green;font-size:28px;&quot;&gt;ING&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="Texas Hold&#39;em" scheme="https://blog.rozin.top/tags/Texas-Hold-em/"/>
+    
+    <category term="数学" scheme="https://blog.rozin.top/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="概率论" scheme="https://blog.rozin.top/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>德州扑克 --- [01] 用概率论讨论各牌型的概率</title>
@@ -75,9 +98,9 @@
     
     
     
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机网络" scheme="https://blog.rozin.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
@@ -96,9 +119,9 @@
     
     
     
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="计算机网络" scheme="https://blog.rozin.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
@@ -178,9 +201,9 @@
     
     
     
-    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
-    
     <category term="知识" scheme="https://blog.rozin.top/tags/%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="技术" scheme="https://blog.rozin.top/tags/%E6%8A%80%E6%9C%AF/"/>
     
     <category term="markdown" scheme="https://blog.rozin.top/tags/markdown/"/>
     

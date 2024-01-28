@@ -35,32 +35,31 @@
     <!-- meta -->
 
 
-<title>计算机网络 --- [01] 物理层 | Rozin</title>
+<title>德州扑克 --- [02] 翻牌后，转牌、河牌中牌概率 | Rozin</title>
 
 
-    <meta name="keywords" content="知识, 技术, 计算机网络">
+    <meta name="keywords" content="知识, Texas Hold&#39;em, 数学, 概率论">
 
 
 
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="ING  物理层的主要功能是实现比特流的透明传输，为数据链路层提供底层数据传输服务。">
+    <meta name="description" content="ING">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络 --- [01] 物理层">
-<meta property="og:url" content="https://blog.rozin.top/2024/01/24/cpunet01wlc/index.html">
+<meta property="og:title" content="德州扑克 --- [02] 翻牌后，转牌、河牌中牌概率">
+<meta property="og:url" content="https://blog.rozin.top/2024/01/28/texas02zphpgl/index.html">
 <meta property="og:site_name" content="Rozin">
-<meta property="og:description" content="ING  物理层的主要功能是实现比特流的透明传输，为数据链路层提供底层数据传输服务。">
+<meta property="og:description" content="ING">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.rozin.top/postimgs/cn01szbm.jpg">
-<meta property="article:published_time" content="2024-01-24T05:59:01.000Z">
-<meta property="article:modified_time" content="2024-01-27T16:22:10.457Z">
+<meta property="article:published_time" content="2024-01-28T09:03:22.000Z">
+<meta property="article:modified_time" content="2024-01-28T09:07:14.325Z">
 <meta property="article:author" content="Rozin">
 <meta property="article:tag" content="知识">
-<meta property="article:tag" content="技术">
-<meta property="article:tag" content="计算机网络">
+<meta property="article:tag" content="Texas Hold&#39;em">
+<meta property="article:tag" content="数学">
+<meta property="article:tag" content="概率论">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.rozin.top/postimgs/cn01szbm.jpg">
 
 
     
@@ -158,10 +157,10 @@
 
 <div class="post-title">
     <h1 class="post-title__text">
-        计算机网络 --- [01] 物理层
+        德州扑克 --- [02] 翻牌后，转牌、河牌中牌概率
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2024/01/" class="post-meta__date button">2024-01-24</a>
+        <a href="/archives/2024/01/" class="post-meta__date button">2024-01-28</a>
         
  
         
@@ -178,7 +177,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%8F%8A%E7%BC%96%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="toc-text">数据通信及编码技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9-Nyquist-%E5%AE%9A%E7%90%86-%E9%A6%99%E5%86%9C-Shannon-%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">香农定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-text">多路复用技术</span></a></li></ol>
+            
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -188,7 +187,7 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">文章目录</div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%8F%8A%E7%BC%96%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="toc-text">数据通信及编码技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9-Nyquist-%E5%AE%9A%E7%90%86-%E9%A6%99%E5%86%9C-Shannon-%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">香农定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-text">多路复用技术</span></a></li></ol>
+        
     </div>
 
 
@@ -197,51 +196,9 @@
     <div class="post__content">
         <p style="color:green;font-size:28px;">ING</p>
 
-<p>物理层的主要功能是实现比特流的透明传输，为数据链路层提供底层数据传输服务。</p>
 <span id="more"></span>
 
 <hr>
-<h3 id="物理层基本概念"><a href="#物理层基本概念" class="headerlink" title="物理层基本概念"></a>物理层基本概念</h3><ul>
-<li>传输单位为bit</li>
-<li>物理设备和传输媒体种类繁多，物理层的作用是尽可能地屏蔽掉这些差异</li>
-<li>使上层链路专注完成本层的协议和服务， <em><strong>不必考虑网络具体的传输媒体是什么</strong></em></li>
-<li>定义如下特性：机械特性（形状&amp;尺寸）、电器特性（电压范围）、功能特性（电平含义）、规程特性</li>
-</ul>
-<h3 id="数据通信及编码技术"><a href="#数据通信及编码技术" class="headerlink" title="数据通信及编码技术"></a>数据通信及编码技术</h3><ul>
-<li>数据(data)：装载信息的实体；</li>
-<li>信号(signal)：模拟信号是随时间连续变化的信号，数字信号是离散信号，如“0，1”；</li>
-<li>信道(channel)：通信的通道。</li>
-</ul>
-<blockquote>
-<p>三种基本方式：单工、半双工、全双工。</p>
-</blockquote>
-<h3 id="编码与调制"><a href="#编码与调制" class="headerlink" title="编码与调制"></a>编码与调制</h3><p>常用数字信号编码：归零编码、不归零编码（non return to zero，NRZ）、曼彻斯特编码（Manchester）、差分曼彻斯特编码（differential Manchester）</p>
-<img src="/postimgs/cn01szbm.jpg" style="zoom:100%" alt="常用数字编码" />
-
-<hr>
-<h3 id="奈奎斯特-Nyquist-定理-香农-Shannon-定理-⭐"><a href="#奈奎斯特-Nyquist-定理-香农-Shannon-定理-⭐" class="headerlink" title="奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐"></a>奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</h3><p>要搞清楚这两个定理，我们要先搞懂一些定义：波特率（baud rate）、比特率（bit rate）、带宽（bandwidth）、容量（capacity）。</p>
-<ol>
-<li><p><strong>波特率、比特率</strong> 易混淆</p>
-<ul>
-<li><em><strong>波特率指的是信号每秒钟电平变化的次数</strong></em>，单位是Hz。比如一个信号在一秒钟内电平发生了50次变化，那么这个信号的波特率就是50Hz；</li>
-<li><em><strong>比特率是每秒钟传输0和1的个数</strong></em>，单位是bps（bit per second）。比特率是信号每秒钟传输的数据的位数，在计算机中，数据都是用0，1表示的。</li>
-<li>假设一个信号只有两个电平，那么这个时候可以把低电平理解为“0”，高电平理解为“1”，这样每秒钟电平变化的次数也就是传输的0，1个数了，即比特率 &#x3D; 波特率。但是有些信号可能不止两个电平，比如一个四电平的信号，那么每个电平就可以被理解成“00”，“01”，“10”，“11”，这样每次电平变化就能传输两位的数据了，即比特率 &#x3D; 2 ×波特率。</br>
-$$ bit Rate = buad Rate × log_{2}L$$
-<h style="display: block;text-align:center;">这里L就是信号电平的个数。</h></li>
-</ul>
-</li>
-<li><p>带宽和容量的概念</p>
-<ul>
-<li>一般信道都有一个<em><strong>最高的信号频率和最低的信号频率</strong></em>（注意这里不是波特率，频率是指每秒钟的周期数，而每个周期都会有几次电平变化），只有在这两个频率之间的信号才能通过这个信道，这<em><strong>两个频率的差值叫做这个信道的带宽</strong></em>，单位是Hz。</li>
-<li>数据在信道中传输会有他们的速度——比特率，这里面最高的比特率就叫做这个信道的容量，单位是bps。口语中也会把信道容量叫做“带宽”的，比如“带宽10M的网络”。所以这两个概念也很容易混淆：我们<em><strong>平常所说的“带宽”不是带宽，而是信道容量</strong></em>。</li>
-</ul>
-</li>
-</ol>
-<p><em><strong>介绍完定义，再来看看这两个定理说的什么。</strong></em></p>
-<h4 id="奈奎斯特定理-⭐"><a href="#奈奎斯特定理-⭐" class="headerlink" title="奈奎斯特定理 ⭐"></a>奈奎斯特定理 ⭐</h4><p>$$ C_{max} &#x3D; 2×B×log_{2}L $$<br><h style="display: block;text-align:center;">这里Cmax指的是信道的最大容量，B是信道的带宽，L还是信号电平的个数</h></p>
-<p>奈奎斯特定理适用的情况是无噪声信道，用来计算理论值。</p>
-<h4 id="香农定理-⭐"><a href="#香农定理-⭐" class="headerlink" title="香农定理 ⭐"></a>香农定理 ⭐</h4><p>$$ C_{max} &#x3D; B×log_{2}(1+S&#x2F;N) $$<br><h style="display: block;text-align:center;">S&#x2F;N指的是信道的信噪比，但是我们一般测量出来的以db为单位的是经过 10×lg(S&#x2F;N) 换算的，所以这里还要换算回来才行。</h><br>香农定理给出了信道信息传送速率的上限（比特每秒）和信道信噪比及带宽的关系。香农定理可以解释现代各种无线制式由于带宽不同，所支持的单载波最大吞吐量的不同。</p>
-<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><h3 id="多路复用技术"><a href="#多路复用技术" class="headerlink" title="多路复用技术"></a>多路复用技术</h3><hr>
 
     </div>
     
@@ -253,7 +210,7 @@ $$ bit Rate = buad Rate × log_{2}L$$
             <strong>
                 本文链接：
             </strong>
-            <a href="https://blog.rozin.top/2024/01/24/cpunet01wlc/">https://blog.rozin.top/2024/01/24/cpunet01wlc/</a>
+            <a href="https://blog.rozin.top/2024/01/28/texas02zphpgl/">https://blog.rozin.top/2024/01/28/texas02zphpgl/</a>
         </p>
         
             <strong>
@@ -264,37 +221,23 @@ $$ bit Rate = buad Rate × log_{2}L$$
     </div>
  
     <div class="post-footer__meta"><p>更新于 2024-01-28</p></div> 
-    <div class="post-entry__tags"><a href="/tags/%E7%9F%A5%E8%AF%86/" class="post-tags__link button"># 知识</a><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-tags__link button"># 计算机网络</a></div> 
+    <div class="post-entry__tags"><a href="/tags/%E7%9F%A5%E8%AF%86/" class="post-tags__link button"># 知识</a><a href="/tags/Texas-Hold-em/" class="post-tags__link button"># Texas Hold&#39;em</a><a href="/tags/%E6%95%B0%E5%AD%A6/" class="post-tags__link button"># 数学</a><a href="/tags/%E6%A6%82%E7%8E%87%E8%AE%BA/" class="post-tags__link button"># 概率论</a></div> 
 </article>
 
 
     <div class="nav">
         <div class="nav__prev">
             
-                <a href="/2024/01/27/winisuDKZY/" class="nav__link">
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                    </div>
-                    <div>
-                        <div class="nav__label">
-                            上一篇
-                        </div>
-                        <div class="nav__title">
-                            Windows本地端口占用问题
-                        </div>
-                    </div>
-                </a>
-            
         </div>
         <div class="nav__next">
             
-                <a href="/2024/01/23/cpunet00gs/" class="nav__link">
+                <a href="/2024/01/27/texas01glldx/" class="nav__link">
                     <div>
                         <div class="nav__label">
                             下一篇
                         </div>
                         <div class="nav__title">
-                            计算机网络 --- 概述
+                            德州扑克 --- [01] 用概率论讨论各牌型的概率
                         </div>
                     </div>
                     <div>
