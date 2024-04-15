@@ -38,7 +38,7 @@
 <title>计算机网络 --- [01] 物理层 | Rozin</title>
 
 
-    <meta name="keywords" content="知识, 技术, 计算机网络">
+    <meta name="keywords" content="知识, 计算机网络, 技术">
 
 
 
@@ -54,11 +54,11 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.rozin.top/postimgs/cn01szbm.jpg">
 <meta property="article:published_time" content="2024-01-24T05:59:01.000Z">
-<meta property="article:modified_time" content="2024-01-27T16:22:10.457Z">
+<meta property="article:modified_time" content="2024-01-30T02:44:12.418Z">
 <meta property="article:author" content="Rozin">
 <meta property="article:tag" content="知识">
-<meta property="article:tag" content="技术">
 <meta property="article:tag" content="计算机网络">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://blog.rozin.top/postimgs/cn01szbm.jpg">
 
@@ -178,7 +178,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%8F%8A%E7%BC%96%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="toc-text">数据通信及编码技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9-Nyquist-%E5%AE%9A%E7%90%86-%E9%A6%99%E5%86%9C-Shannon-%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">香农定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-text">多路复用技术</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%8F%8A%E7%BC%96%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="toc-text">数据通信及编码技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9-Nyquist-%E5%AE%9A%E7%90%86-%E9%A6%99%E5%86%9C-Shannon-%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">香农定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-text">多路复用技术</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%91%E5%88%86%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%EF%BC%8CFDM"><span class="toc-text">频分多路复用，FDM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A2%E5%88%86%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%EF%BC%8CWDM"><span class="toc-text">波分多路复用，WDM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%88%86%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%EF%BC%8CTDM"><span class="toc-text">时分多路复用，TDM</span></a></li></ol></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -188,7 +188,7 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">文章目录</div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%8F%8A%E7%BC%96%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="toc-text">数据通信及编码技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9-Nyquist-%E5%AE%9A%E7%90%86-%E9%A6%99%E5%86%9C-Shannon-%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">香农定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-text">多路复用技术</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">物理层基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%8F%8A%E7%BC%96%E7%A0%81%E6%8A%80%E6%9C%AF"><span class="toc-text">数据通信及编码技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E4%B8%8E%E8%B0%83%E5%88%B6"><span class="toc-text">编码与调制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9-Nyquist-%E5%AE%9A%E7%90%86-%E9%A6%99%E5%86%9C-Shannon-%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特(Nyquist)定理 &amp; 香农(Shannon)定理 ⭐</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">奈奎斯特定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A6%99%E5%86%9C%E5%AE%9A%E7%90%86-%E2%AD%90"><span class="toc-text">香农定理 ⭐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%8B%E9%A2%98"><span class="toc-text">例题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%E6%8A%80%E6%9C%AF"><span class="toc-text">多路复用技术</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%91%E5%88%86%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%EF%BC%8CFDM"><span class="toc-text">频分多路复用，FDM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A2%E5%88%86%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%EF%BC%8CWDM"><span class="toc-text">波分多路复用，WDM</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%88%86%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8%EF%BC%8CTDM"><span class="toc-text">时分多路复用，TDM</span></a></li></ol></li></ol>
     </div>
 
 
@@ -241,7 +241,10 @@ $$ bit Rate = buad Rate × log_{2}L$$
 <h4 id="奈奎斯特定理-⭐"><a href="#奈奎斯特定理-⭐" class="headerlink" title="奈奎斯特定理 ⭐"></a>奈奎斯特定理 ⭐</h4><p>$$ C_{max} &#x3D; 2×B×log_{2}L $$<br><h style="display: block;text-align:center;">这里Cmax指的是信道的最大容量，B是信道的带宽，L还是信号电平的个数</h></p>
 <p>奈奎斯特定理适用的情况是无噪声信道，用来计算理论值。</p>
 <h4 id="香农定理-⭐"><a href="#香农定理-⭐" class="headerlink" title="香农定理 ⭐"></a>香农定理 ⭐</h4><p>$$ C_{max} &#x3D; B×log_{2}(1+S&#x2F;N) $$<br><h style="display: block;text-align:center;">S&#x2F;N指的是信道的信噪比，但是我们一般测量出来的以db为单位的是经过 10×lg(S&#x2F;N) 换算的，所以这里还要换算回来才行。</h><br>香农定理给出了信道信息传送速率的上限（比特每秒）和信道信噪比及带宽的关系。香农定理可以解释现代各种无线制式由于带宽不同，所支持的单载波最大吞吐量的不同。</p>
-<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><h3 id="多路复用技术"><a href="#多路复用技术" class="headerlink" title="多路复用技术"></a>多路复用技术</h3><hr>
+<h4 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h4><h3 id="多路复用技术"><a href="#多路复用技术" class="headerlink" title="多路复用技术"></a>多路复用技术</h3><h4 id="频分多路复用，FDM"><a href="#频分多路复用，FDM" class="headerlink" title="频分多路复用，FDM"></a>频分多路复用，FDM</h4><p>（frequency division multiplexing）<br>将信道按频率划分为若干个子信道，主要用于模拟信号。</p>
+<h4 id="波分多路复用，WDM"><a href="#波分多路复用，WDM" class="headerlink" title="波分多路复用，WDM"></a>波分多路复用，WDM</h4><p>（wavelength division multiplexing）<br>频分多路复用在光纤信道上的变种。</p>
+<h4 id="时分多路复用，TDM"><a href="#时分多路复用，TDM" class="headerlink" title="时分多路复用，TDM"></a>时分多路复用，TDM</h4><p>（time division multiplexing）<br>不同时占用频带宽度（可能造成线路资源浪费）&#x3D;&gt; 异步时分（STDM）（动态分配时隙，有数据则分配时隙，用完收回）</p>
+<hr>
 
     </div>
     
@@ -263,8 +266,8 @@ $$ bit Rate = buad Rate × log_{2}L$$
         
     </div>
  
-    <div class="post-footer__meta"><p>更新于 2024-01-28</p></div> 
-    <div class="post-entry__tags"><a href="/tags/%E7%9F%A5%E8%AF%86/" class="post-tags__link button"># 知识</a><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-tags__link button"># 计算机网络</a></div> 
+    <div class="post-footer__meta"><p>更新于 2024-01-30</p></div> 
+    <div class="post-entry__tags"><a href="/tags/%E7%9F%A5%E8%AF%86/" class="post-tags__link button"># 知识</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="post-tags__link button"># 计算机网络</a><a href="/tags/%E6%8A%80%E6%9C%AF/" class="post-tags__link button"># 技术</a></div> 
 </article>
 
 
@@ -294,7 +297,7 @@ $$ bit Rate = buad Rate × log_{2}L$$
                             下一篇
                         </div>
                         <div class="nav__title">
-                            计算机网络 --- 概述
+                            计算机网络 --- [00] 概述
                         </div>
                     </div>
                     <div>
